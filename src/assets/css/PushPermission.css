@@ -1,0 +1,11 @@
+.MuiDialog-scrollPaper {
+    align-items: flex-start !important;
+  }
+
+.MuiDialogTitle-root img{
+    width: 70px;
+    margin-right: 20px;
+}
+.MuiDialog-paper {
+    margin: 0 !important;
+}

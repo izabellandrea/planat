@@ -1,0 +1,85 @@
+.sight-list {
+  width: 100%;
+}
+
+.sightlist-element {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px;
+}
+
+.sightlist-element .image__holder {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 260px;
+  min-width: 260px;
+  max-width: 260px;
+}
+
+.sightlist-element__image {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.sightlist-element__details {
+  margin-left: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #555770;
+}
+
+.sightlist-element__details h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: black;
+}
+
+.sightlist-element .button--more {
+  align-self: flex-end;
+  border: none;
+  margin-left: auto;
+  background: #3a5e57;
+  border-radius: 4px;
+  padding: 10px 40px 10px 10px;
+  min-width: 130px;
+  position: relative;
+  color: #fff;
+  transition: background 300ms ease;
+}
+
+.sightlist-element .button--more:hover {
+  background: #3a5e57;
+}
+
+.sightlist-element .button--more:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 20px;
+  width: 20px;
+  background: url("../images/arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 300ms ease;
+}
+
+.sightlist-element .button--more:hover:after {
+  transform: translate(5px, -50%);
+}
+
+.sight-list__no-results {
+  text-align: center;
+}

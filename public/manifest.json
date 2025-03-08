@@ -1,0 +1,23 @@
+{
+  "name": "PlanAt",
+  "gcm_sender_id": "1038255685950",
+  "icons": [
+    {
+      "src": "planat_logo_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "planat_logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "scope":"../",
+  "display": "standalone", 
+  "theme_color": "#3a5e57",
+  "background_color": "#ffffff"
+}

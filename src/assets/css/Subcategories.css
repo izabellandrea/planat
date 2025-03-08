@@ -1,0 +1,37 @@
+.subcategory {
+  position: absolute;
+  border: 1px solid #ebebf0;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px 15px 15px 45px;
+  z-index: 1;
+  box-shadow: 2px 2px 7px #b3b3b3;
+  min-width: 250px;
+}
+
+.subcategory__title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.subcategory__group {
+  border-top: 1px solid #bbb;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .subcategory {
+    width: 40%;
+    left: calc(22% + 15px);
+    top: calc(74% + 15px);
+  }
+}
+
+@media (min-width: 768.1px) {
+  .subcategory {
+    left: calc(100% + 15px);
+    top: calc(100% + 15px);
+  }
+}

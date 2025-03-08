@@ -1,0 +1,96 @@
+.location-range {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 0 0;
+  border-top: 1px solid #ebebf0;
+}
+
+.location-range__slider {
+  margin-left: 20px;
+  min-width: 80%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.location-range__input-group {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.range-input {
+  width: 40%;
+  border-radius: 8px;
+  background-color: rgba(141, 143, 165, 0.16);
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #555770;
+  padding: 5px 0px 5px 10px;
+}
+
+.range-input:focus {
+  outline: none;
+}
+
+.range-label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #555770;
+}
+
+.range-label.unit {
+  padding-left: 5px;
+}
+
+.rc-slider-dot {
+  display: none;
+}
+
+.rc-slider-handle {
+  border: solid 1.5px #000;
+  height: 10px;
+  width: 10px;
+  margin-top: 0;
+}
+
+.rc-slider-handle:active {
+  border-color: #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.rc-slider-handle:hover {
+  border: solid 1.5px #000;
+}
+
+.rc-slider-handle-click-focused:focus {
+  border: solid 1.5px #000;
+}
+
+.rc-slider-rail {
+  height: 10px;
+}
+
+.rc-slider-track {
+  height: 10px;
+  background-color: #000;
+}
+
+.rc-slider-step {
+  height: 10px;
+}
+
+.rc-slider {
+  padding-bottom: 20px;
+}
+
+.rc-slider-mark-text {
+  min-width: 35px;
+}

@@ -1,0 +1,7 @@
+.leaflet-container {
+  background-color: transparent;
+}
+
+.leaflet-control-zoom {
+  display: none;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3a5e57">
+    <meta name="description" content="page">
+    <link rel="shortcut icon" href="./planat_logo_mini_512.png" width="512" height="512" />   
+    <link rel="icon" type="image/png" href="planat_logo_mini_128.png" sizes="128x128"  />
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="planat_logo_mini_192.png" sizes="192x192">    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+    
+    <script src="main.js"></script>
+    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+      
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    
+    
+    <!-- Load Leaflet from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEipDMPCaMqC-NZ1dFsD86cBSvU_b_n1A&libraries=places"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K74T0E80HH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K74T0E80HH');
+    </script>
+
+
+    <title>Planat</title>
+    <link rel="preload" as="image" href="../src/assets/images/NewYork.png" />
+    <link rel="preload" as="image" href="../static/media/NewYork.339e1779.png"/>
+
+    <style>
+      .load {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid  #3a5e57;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0%  { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <div class="loader-container"style="position: absolute;
+      top: 40%;
+      left: 45%;">
+      <img class="load" src="/static/media/planat_logo.6987b4ac.png" alt="Logo" width="50" height="50"style="position: absolute;" />
+ 
+      
+  </div>
+  </body>
+</html>

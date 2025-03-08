@@ -1,0 +1,59 @@
+@import url("https://rsms.me/inter/inter.css");
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+button,
+a {
+  cursor: pointer;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  margin-right: 5px;
+}
+ 
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.slick-track div {
+  outline: none;
+}
+
+.labeled-radio,
+.labeled-check {
+  position: relative;
+  padding: 0 0 30px;
+}
+
+.labeled-radio label,
+.labeled-check label {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.radio-button,
+.pa-checkbox {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
+.app{
+  position: relative;
+}

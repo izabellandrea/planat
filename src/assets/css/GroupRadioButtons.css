@@ -1,0 +1,15 @@
+.labeled-radio {
+  display: block;
+  padding: 0px 0px 10px;
+}
+
+.group-select {
+  padding: 10px 10px 0px 10px;
+}
+
+.group-select__radio-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 10px;
+}

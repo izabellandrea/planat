@@ -1,0 +1,118 @@
+.navbar {
+  height: 70px;
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.navbar a img{
+
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+  }
+
+
+.button-back{
+  position: fixed;
+border: none;
+background-color: transparent;
+
+}
+
+.button-back:focus{
+  border: none;
+}
+
+.button-back .MuiSvgIcon-root {
+  fill: #3a5e57;
+  font-size: 2.5rem;
+}
+
+.log-button {
+  color: #fff;
+  background: #3a5e57;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 300ms ease;
+  margin-left: auto;
+}
+
+.log-button:hover {
+  background: #3a5e57;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  padding-right: 20px;
+}
+
+ .navbar a {
+  color: #3a5e57;
+}
+
+.navbar  a:hover {
+  background: none;
+}
+
+@media (max-width: 600px) {
+
+  .navbar{
+    height: 40px;
+    
+  }
+  .navbar a{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar a img{
+    height: 30px;
+    width: auto;
+    margin:0;
+  }
+  .log-button {
+   
+    font-size: 9px; 
+    padding: 9px;}
+
+    .profile{
+      padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+  .navbar a{
+    margin-left: auto;
+    margin-right: auto;
+  }}
+
+
+  @media (min-width: 769px) {
+    .navbar a{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+

@@ -1,0 +1,11 @@
+.MuiSnackbarContent-root {
+    background-color: #fff !important;
+    color:black !important;  
+    font-size: 15px !important; 
+}
+
+.MuiButton-textSecondary {
+    color: #3a5e57 !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+}

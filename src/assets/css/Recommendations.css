@@ -1,0 +1,332 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+
+
+.recommendations {
+
+    padding-bottom: 65px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 92% auto;
+
+}
+
+.recommendations__cards {
+  width: 95%;
+  display: grid;
+  grid-gap: 3%;
+  grid-template-columns: 32.3% 32.3% 32.3%;
+  margin: auto;
+}
+
+.recommendations__cards .card img:hover {
+  opacity: 0.7;
+}
+
+.recommendations__title {
+  margin: 30px 0 30px 20px;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #555770;
+}
+
+.carousel-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  border-radius: 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+.card__body {
+  min-height: 1px;
+  height: 100%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 16px;
+}
+
+.card__body .card__body__title {
+  margin: 0px ;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
+  color: #000;
+
+}
+
+.card__body .card__body__address,
+.card__body__details {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: #555770;
+  padding: 8px 0;
+}
+
+.card__body__tags {
+  display: inline-block;
+}
+
+.card__body__tag {
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card__body__btn {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #3a5e57;
+  transition: color 300ms ease;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.card__body__btn:hover {
+  background: transparent;
+  color: #3a5e57;
+}
+
+.card__image {
+  border-radius: 8px 8px 0 0;
+  flex: none;
+  margin: 0px 16px;
+  width: 100%;
+  height: 270px;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+.card__image-holder {
+  outline: none;
+}
+
+.recommendations .slick-track {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
+.slick-slide{
+  width: 100%;
+}
+.slick-slide.slick-active {
+  height: 100%;
+  width: 90%;
+}
+
+.slick-slide > div {
+  height: 100%;
+  margin: 5px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  opacity: unset;
+  color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+.recommendations {
+  grid-template-rows: 67% 34%;
+}
+
+.card__body .card__body__title {
+  font-size: 20px; 
+  padding: 7px 0;
+}
+
+.card__body .card__body__address, .card__body__tag-container,.card__body__details {  
+  font-size: 14px;
+}
+
+.slick-slide > div {
+  height: 450px;
+}
+
+.recommendations__cards {
+  grid-gap: 2%;
+}
+.carousel-container {
+  width: 95%;
+}
+
+}
+
+
+@media (min-width: 768px) {
+  .recommendations {
+
+    grid-template-rows:  68% auto;
+
+}
+}
+
+
+/* smartphones*/
+
+@media (max-width: 600px) {
+  
+  .recommendations {
+
+    grid-template-rows:  92% 15%;
+
+}
+
+
+.recommendations .slick-list{
+  height: 400px;
+}
+  .container {
+    width: 85%;
+  }
+  .recommendations__title {
+    font-size: 25px;
+    margin: 20px 0 20px 20px;
+    text-align: center;
+}
+  .recommendations__cards {
+    width: 90%;
+    grid-template-columns: 100%;
+    
+  }
+
+  .recommendations__cards .card {
+    width: 100%;
+  }
+
+  .recommendations__cards .card__image {
+    width: 100%;
+    max-height: 270px;
+  }
+
+ .recommendations__cards .card__body{
+    padding:16px !important;
+    justify-content: unset;
+  } 
+  .recommendations__cards .card__body .card__body__address,
+  .recommendations__cards .card__body .card__body__details,
+  .recommendations__cards .card__body__tags,
+  .recommendations__cards .card__body__title {
+    width: 100%;
+    font-size: 10px;
+    padding: 2px 1px 2px 1px;
+  }
+  
+
+
+  .recommendations__cards .card .card__body .card__body__title{
+    font-size: 15px;
+  }
+
+  .recommendations__cards .card__body .card__body__address,
+  .recommendations__cards .card__body__tag-container {
+  
+    font-size: 10px;
+  }
+  .recommendations__cards .card__body__tag-container .card__body__tag{
+    font-size: 9px;
+    margin:2px;
+  }
+  
+
+  .recommendations__container .carousel{
+      margin-bottom:0;
+    }
+
+  .slick-list .card {
+    width: 100%;
+
+  }
+
+ 
+  .slick-list .card__image {
+    width: 100%;
+    max-height: 200px;
+    margin: 0;
+  }
+
+  .slick-list .card__body{
+    padding: 16px;
+    justify-content: unset;
+  }
+
+  .slick-list .card__body .card__body__address,
+  .slick-list .card__body .card__body__details,
+  .slick-list .card__body__tags,
+  .slick-list .card__body__title {
+    width: 100%;
+    font-size: 10px;
+    padding: 2px 1px 2px 1px;
+  }
+
+
+  .slick-list .card .card__body .card__body__title{
+    font-size: 15px;
+  }
+
+  .slick-list .card__body .card__body__address,
+  .slick-list .card__body__tag-container {
+  
+    font-size: 10px;
+  }
+  .slick-list .card__body__tag-container .card__body__tag{
+    font-size: 9px;
+    margin:2px;
+  }
+ 
+  .slick-slide > div {
+    height: 100%;
+    margin: 8px;
+}
+.slick-next,.slick-prev{
+ display: none !important;
+  
+}
+
+
+
+}

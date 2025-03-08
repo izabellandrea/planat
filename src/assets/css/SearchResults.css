@@ -1,0 +1,92 @@
+.search__holder {
+  padding-top: 100px;
+}
+
+.search-results {
+  padding-top: 20px;
+  position: relative;
+  height: calc(100vh - 200px);
+  display: flex;
+}
+
+.search-results .search-bar {
+  transform: none;
+}
+
+.sightlist-element {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-results .leaflet-container {
+  width: 50%;
+  margin-right: 0;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.search-results__sightlist-filter-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.search-results__sightlist-filter-container .sight-list {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3a5e57;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* for smart phones */
+@media (max-width: 600px) {
+
+  .search__holder {
+    padding-top: 0px;
+  }
+
+  .search-results__sightlist-filter-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;}
+
+    .leaflet-container {
+      display: none;
+  }
+
+  .sightlist-element .image__holder {
+   
+    height: 190px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.sightlist-element {
+  width: 95%;
+  display:block;
+}
+  
+
+}

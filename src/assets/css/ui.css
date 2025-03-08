@@ -1,0 +1,95 @@
+.ui-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin: -25px 0 0 -100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #eee;
+  border-radius: 4px;
+}
+
+.home-button {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home-button svg {
+  margin-top: 8px;
+  fill: #eee;
+}
+
+ul.form-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+
+ul.form-list li {
+  display: flex;
+  padding-bottom: 24px;
+  align-items: center;
+}
+
+ul.form-list li label {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 0 0 50%;
+}
+
+ul.form-list li input,
+ul.form-list li select {
+  flex: 1 1 50%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+ul.form-list li div {
+  flex: 1 1 50%;
+}
+
+.form-list.form-list-stacked li {
+  display: block;
+}
+.form-list.form-list-stacked li label,
+.form-list.form-list-stacked li input,
+.form-list.form-list-stacked li select {
+  display: block;
+  width: 100%;
+}
+.form-list.form-list-stacked li label {
+  margin-bottom: 16px;
+}
+
+.action {
+  display: block;
+  background-color: #333;
+  color: #eee;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 5%;
+}
+
+.action:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.action.disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
