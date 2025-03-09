@@ -3,8 +3,7 @@ First need a request to access demo cors server at https://cors-anywhere.herokua
 
 The web app can be accessed here: https://planat-3b625.firebaseapp.com/
 
-If it's not working, and you have access to demo cors server, then try to clear the cache.
-
+To ensure the web app functions correctly, both the private and public keys must be provided.
 
 PlanAt is a travel web application that allows users to find some of the recreation places that best suit their needs by providing some information at searching. 
 During the development of PlanAt PWA, I was focusing on what PWA components and features contribute to improving the user experience of web applications. PWAs significantly improve the user experience of classic web applications mainly through offline usability, speed, and application-like appearance. At the development of each component and functionality, I paid attention to many UX aspects, that I haven’t detailed in this document. 
